@@ -79,7 +79,7 @@ function handleBirthdayGreetings(msg) {
 
 function handleMenu(msg) {
   const chatId = msg.chat.id;
-  const menuText = 'Opciones disponibles:\n/list - Ver cumpleaños\n/checkbirthday [nombre] - Ver cumpleaños de alguien\n/setbirthday [Nombre DD-MM] - Registrar un cumpleaños';
+  const menuText = 'Opciones disponibles:\n/list - Ver cumpleaños\n/checkbirthday [nombre] - Ver cumpleaños de alguien\n/setbirthday [Nombre DD-MM] - Registrar un cumpleaños\n/status - Ver el estatus del día';
   sendTextMessage(chatId, menuText);
 }
 

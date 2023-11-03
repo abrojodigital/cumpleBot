@@ -6,4 +6,5 @@ bot.onText(/\/list/, handleList);
 bot.onText(/\/checkbirthday (.+)/, handleCheckBirthday);
 bot.onText(/\/setbirthday (.+)/, handleSetBirthday);
 bot.onText(/\/menu/, handleMenu);
+bot.onText(/\/status/,handleBirthdayGreetings);
 bot.on('text', handleBirthdayGreetings);
