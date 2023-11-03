@@ -1,0 +1,18 @@
+{
+  "name": "cumplebot",
+  "version": "1.0.0",
+  "description": "Bot para Telegram que informa cunpleaños",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pablo Bersier",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "node-fetch": "^2.6.8",
+    "node-schedule": "^2.1.1",
+    "node-telegram-bot-api": "^0.64.0",
+    "nodemon": "^3.0.1"
+  }
+}
