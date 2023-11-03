@@ -13,7 +13,7 @@ function handleList(msg) {
 
   for (const name in familyBirthdays) {
     const birthday = new Date(familyBirthdays[name]);
-    const day = birthday.getDate() + 1;
+    const day = birthday.getDate();
     const month = birthday.getMonth() + 1;
     const formattedDate = `${day < 10 ? '0' : ''}${day}-${month < 10 ? '0' : ''}${month}`;
     message += `${name}: ${formattedDate}\n`;
@@ -29,7 +29,7 @@ function handleCheckBirthday(msg, match) {
 
   if (familyBirthdays[requestedName]) {
     const birthday = new Date(familyBirthdays[requestedName]);
-    const day = birthday.getDate() + 1;
+    const day = birthday.getDate();
     const month = birthday.getMonth() + 1;
     const formattedDate = `${day < 10 ? '0' : ''}${day}-${month < 10 ? '0' : ''}${month}`;
     sendTextMessage(chatId, `El cumpleaños de ${requestedName} es el ${formattedDate}.`);
@@ -67,7 +67,7 @@ function handleBirthdayGreetings(msg) {
 
   for (const name in familyBirthdays) {
     const birthday = new Date(familyBirthdays[name]);
-    const day = birthday.getDate() + 1;
+    const day = birthday.getDate();
     const month = birthday.getMonth() + 1;
     const formattedDate = `${day < 10 ? '0' : ''}${day}-${month < 10 ? '0' : ''}${month}`;
 
